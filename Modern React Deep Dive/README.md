@@ -206,7 +206,7 @@ c();
 
 ## 5. 상태 관리
 
-### 1. recoil
+### 1. [recoil](https://velog.io/@k1my3ch4n/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC-Recoil)
 
 ### 2. Zustand
 
