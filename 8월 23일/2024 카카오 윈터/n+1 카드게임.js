@@ -5,7 +5,6 @@ const findTarget = (cards, target) => {
   for (let i = 0; i < length; i++) {
     for (let j = i + 1; j < length; j++) {
       if (cards[i] + cards[j] == target) {
-        console.log([cards[i], cards[j]]);
         return [cards[i], cards[j]];
       }
     }

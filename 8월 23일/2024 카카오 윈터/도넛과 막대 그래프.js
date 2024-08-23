@@ -23,10 +23,10 @@ const findGraphs = (map) => {
   const graphCount = Array(4).fill(0);
 
   for (const [key, data] of map) {
-    const [give, recieve] = data;
+    const [give, receive] = data;
 
     // 나가는게 2개 이상 , 들어오는게 없다면 -> 새로 만든 정점
-    if (give >= 2 && recieve === 0) {
+    if (give >= 2 && receive === 0) {
       graphCount[0] = key;
     }
     // 막대 그래프의 마지막 점은 나가는게 없음
@@ -34,7 +34,7 @@ const findGraphs = (map) => {
       graphCount[2]++;
     }
     // 8자의 가운데는 2개가 들어오고 2개가 나감
-    else if (give >= 2 && recieve >= 2) {
+    else if (give >= 2 && receive >= 2) {
       graphCount[3]++;
     }
   }

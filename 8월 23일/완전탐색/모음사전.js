@@ -10,7 +10,7 @@ const getDictionary = (wordArray, output) => {
     return;
   }
 
-  AEIOU.forEach((word, index) => {
+  AEIOU.forEach((word) => {
     getDictionary([...wordArray, word], output);
   });
 };
